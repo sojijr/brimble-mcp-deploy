@@ -1,0 +1,10 @@
+.exe
+*.test
+*.out
+.env
+.env.*
+!.env.example
+.vscode/*
+!.vscode/mcp.json
+.DS_Store
+Thumbs.db
