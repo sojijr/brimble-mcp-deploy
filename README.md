@@ -1,8 +1,31 @@
-# To-do API
+# Deploying an Application on Brimble Using MCP in VS Code
 
-A small Go/Gin API backed by PostgreSQL. It creates the `todos` table on startup; no Docker setup is included.
+This repository contains the Todo API used in the DevRel tutorial **Deploying an Application on Brimble Using MCP in VS Code**. The tutorial uses the Brimble MCP server from VS Code to deploy this Go application.
 
-## Run
+The API is built with Go and Gin and uses PostgreSQL.
+
+## Configure Brimble MCP in VS Code
+
+Add the following server configuration to your MCP configuration.
+
+```json
+{
+  "mcpServers": {
+    "brimble": {
+      "tools": [
+        "*"
+      ],
+      "type": "http",
+      "url": "https://mcp.brimble.io",
+      "headers": {
+        "Authorization": "Bearer ${BRIMBLE_API_KEY}"
+      }
+    }
+  }
+}
+```
+
+## Run the Todo API locally
 
 Set `DATABASE_URL` to a PostgreSQL connection string and optionally set `PORT` (defaults to `8080`), then run:
 
