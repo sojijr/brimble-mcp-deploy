@@ -1,4 +1,4 @@
-# Deploying an Application on Brimble Using MCP in VS Code
+# Deploying an Application Using Brimble MCP in VS Code
 
 This repository contains the Todo API used in the DevRel tutorial **Deploying an Application on Brimble Using MCP in VS Code**. The tutorial uses the Brimble MCP server from VS Code to deploy this Go application.
 
